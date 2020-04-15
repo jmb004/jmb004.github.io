@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Today: Day 2: Made a Splash page on WordPress'
+title: 'Today: Day 3: Going live.
 published: true
 ---
 
