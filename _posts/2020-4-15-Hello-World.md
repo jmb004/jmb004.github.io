@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Today: Day 3: Going live.'
+title: 'Today: Day 3: Going live'
 published: true
 ---
 
