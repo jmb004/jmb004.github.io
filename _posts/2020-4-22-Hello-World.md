@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Today: Day 4: Moving Portfolio
+title: 'Today: Day 4: Moving Portfolio'
 published: true
 ---
 
