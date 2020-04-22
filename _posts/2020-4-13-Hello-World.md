@@ -4,4 +4,4 @@ title: 'Today: Day 1 of many...'
 published: true
 ---
 
-This is my first blog post about creating a WordPress side business. Please see my portfolio <a href="https://josephbalog.com/Portfolio" >here</a>.
+This is my first blog post about creating a WordPress side business. Please see my portfolio <a href="https://josephbalog.com/Portfolio/">here</a>.
