@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ### More Information
 
-WordPress Developer. For Hire.
+WordPress Developer. <a href="josephbalog.com/Portfolio" For Hire.</a>
 
 ### Contact me
 
