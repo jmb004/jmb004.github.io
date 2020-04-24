@@ -1,11 +1,10 @@
 ---
 layout: post
-title: 'Today: Day 4: Moving Portfolio'
+title: 'Today: Day 5: Sharing Portfolio'
 published: true
 ---
 
 Made some progress today with:
-1. Finished my development of <a href="https://josephbalog.com/Portfolio/"> portfolio </a> pages (the last Splash page).
-2. Learned you could expose flaws in Bluehost backend by adding a user to the DB and changing some .htaccess files (Got NordVPN too!)
-3. Focused on security plugins, updates, changes and learning what Bluehost already has given me. Thank you <a href="https://www.bluehost.com/track/jmb001/">Bluehost</a>!
-
+1. Working with my client Rocky's Pro Services on business development and getting the site hosted.
+2. Finishing touches on the portfolio. Learned that the most progress comes in small steps.
+3. Reminded that you don't have to try to impress people to get friends or influence people.
