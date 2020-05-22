@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Today: Day 13: Insights'
+title: 'Today: Day 16: Insights'
 published: true
 ---
 
