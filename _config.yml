@@ -6,7 +6,7 @@
 name: Joseph Balog's Blog
 
 # Short bio or description (displayed in the header)
-description: <a href="https://www.josephbalog.com">Web Developer</a> in Grand Rapids
+description: <a href="https://www.josephbalog.com/Portfolio">Web Developer</a> in Grand Rapids
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://en.gravatar.com/userimage/69664343/d06322829a80f887536a4c9250cb7c64.jpg?size=200
@@ -25,7 +25,7 @@ footer-links:
   instagram:
   linkedin: joebalog
   pinterest:
-  rss: https://josephbalog.blogspot.com/feeds/posts/default
+  rss: https://josephbalog.blogspot.com/feeds
   twitter: https://twitter.com/joembalog
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
