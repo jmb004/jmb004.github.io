@@ -1,0 +1,10 @@
+---
+layout: post
+title: 'Today: Day 20: Word of the Month'
+published: true
+---
+
+Made some progress today with:
+1. Recommend <a href="https://elementor.com/">elementor</a> tool.
+2. Learned about <a href="https://manychat.com/">ManyChat(5min)</a>.
+3. Got an insight about timing, that with a page builder, it makes it so much easier. #insights
