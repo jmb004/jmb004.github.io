@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'Today: Day 23: Art'
+title: 'Today: Day 24: Give'
 published: true
 ---
 
 Made some progress today with:
-1. Recommend <a href="https://chrome.google.com/webstore/detail/group-your-tabs/chaoejepfhlcelgpicelfccoiojpiofn?hl=en"> Group Your Tabs</a> tool.
-2. Learned about <a href="https://wordpress.org/support/article/using-permalinks/"> WP permalinks(5min)</a>.
-3. Got an insight about making things is more than utility, it's also beauty. #insights
+1. Recommend the tool<a href="https://libbyapp.com/library/grpl"> Libby </a> tool.
+2. Learned about the subject <a href="https://blog.acx.com/"> audiobook creation (5min)</a>.
+3. Got an insight about writing: In order to get good at writing you need to read. #insights
