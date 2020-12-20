@@ -5,6 +5,8 @@ permalink: /about/
 ---
 ### More Information
 
+Data Analyst. <a href="https://josephbalog.com"> For Hire.<a/>
+  
 WordPress Developer. <a href="https://josephbalog.com/Portfolio/"> For Hire.</a>
 
 ### Contact me
