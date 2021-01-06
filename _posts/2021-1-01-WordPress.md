@@ -4,31 +4,35 @@ title: 'Exploring religious data to learn about Excel & Python mapping'
 published: true
 ---
 
-The data sets come from the Association of Religious Data Archives (https://www.thearda.com). 
-The 3 sets used are Religious Congregations and Membership Study 2000, World Religion Project - Global Religion Dataset, and the Longitudinal Religious Congregations and Membership File, 1980-2010.
+My interest was to do some basic visual data analysis of a religion in the state of Michigan.
 
+The data set, Religious Congregations and Membership Study 2000, came from the Association of [Religious Data Archives](https://www.thearda.com). 
+
+**Making the map**
 A guide for making the map was [used](https://plotly.com/python/choropleth-maps/). The idea was to map the various Orthodox adherents to a chloropath style map.
 Additional guidance was found on [Towards Data Science](https://towardsdatascience.com/choropleth-maps-101-using-plotly-5daf85e7275d).
 
 I pre-processed the data in Excel. This was to filter down to Michigan data. What we are looking at is 3-dimensional long data that I want to analyze. 3d from the fact that it's a County, crossed by a Group, crossed by a Year.
 
-The problem arises when using a FIPS codes as the ID for the mapping, what happens when you have multiple data points with the same FIPS? Simply, how does the mapping function work when you have data for the same counties that you want to display?
+**The Problem**
+The problem arises when multiple data points have the same FIPS. Simply, how does the mapping function work to read in the data accounting for this?
 
-There a few options: 1) reduce the variables in the data set to only 2 (i.e., Year and Group) so that the map is a graph. Which it sort of is. Or, nest the Adherent (number variable) inside the labels and use the scale to show the various groups. This would only look different and maybe be harder to interpret quickly. The question is, what do I want to show?
+**Possible Solutions**
+There a few options: reduce the variables in the data set to only 2 (i.e., reduce the variables Year and Group to 1) so that the map is a plot of 2 variables. Or, use another parameter of the function to create a 3rd dimension. This would only look different and maybe be harder to interpret quickly. The question is, what do I want to show?
 
 First, I decided to simplify the dataset to 1 year, 2010, and change the scope of the interesting variable (Orthodox denominations) into 1 variable of interest. This allows for a strict 2-variable scale to show the number of adherents by county. You get a snap-shot as opposed to scalar dataset.
 
 Format: ![pre-processed](/images/EO_2010.png)
 
-I used the second options found in the [function](https://plotly.com/python-api-reference/generated/plotly.express.choropleth) to create a "subplot" to show that data. Using the facet_row method, it creates multiple maps for each variable selected. It looks messy even with only a little over a dozen grouping variables.
+I used the second option found in the [function](https://plotly.com/python-api-reference/generated/plotly.express.choropleth) to create a "subplot" to show that data. Using the facet_row method, it creates multiple maps for each variable selected. It looks messy even with only a little over a dozen grouping variables.
 
 ![framed_col](/images/facet_row.png)
 
-The second variation was to use the animation_frame method to showcase the various groups while still only in 1 year. While "unorthodox" in method (pun intended) since this parameter is usually for time, it is a way to see the geographical division by group. 
+Then I remembered another method: use the animation_frame method to showcase the various groups while still only in 1 year. While "unorthodox" (pun intended) in method, since this parameter is usually for time, it is a way to see the geographical division by group. 
 
 Format: ![animation_frame](/images/animation.png)
 
-This discovery, that a chloropleth map is actually a plot with geo on the vertical axis is one that helps shape the way the data is pre-processed to enter correctly into the mapping function. While other solutions may exist, it seems that this is the easiet route. I have not read of other users finding this to be a problem with there data. In fact, the assumption seems to be that the map processes the merging of FIPS rows in a satisfactorly way. If that's correct, I have to disagree.
+This discovery, that a chloropleth map is actually a plot with geophical data (FIPS here) on the vertical axis is one that helps shape the way the data is fed into the mapping function. While other solutions may exist, it seems that that pre-processing the data to remove or reduce a variable is the easiet route. I have not read of other users finding this to be a problem with there data. In fact, the assumption seems to be that the map processes the merging of FIPS rows with multiple datapoints in a satisfactorly way. If that's a correct assumption I have to disagree.
 
 Code below
 ------
