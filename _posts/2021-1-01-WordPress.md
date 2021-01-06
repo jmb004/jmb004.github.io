@@ -6,7 +6,7 @@ published: true
 
 My interest was to do some basic visual data analysis of a religion in the state of Michigan.
 
-The data set, Religious Congregations and Membership Study 2000, came from the Association of [Religious Data Archives](https://www.thearda.com). 
+The data set, Religious Congregations and Membership Study 2000, came from the [Association of Religious Data Archives](https://www.thearda.com). 
 
 **Making the map**
 A guide for making the map was [used](https://plotly.com/python/choropleth-maps/). The idea was to map the various Orthodox adherents to a chloropath style map.
