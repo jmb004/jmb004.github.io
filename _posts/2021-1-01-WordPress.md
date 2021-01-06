@@ -18,15 +18,15 @@ There a few options: 1) reduce the variables in the data set to only 2 (i.e., Ye
 
 First, I decided to simplify the dataset to 1 year, 2010, and change the scope of the interesting variable (Orthodox denominations) into 1 variable of interest. This allows for a strict 2-variable scale to show the number of adherents by county. You get a snap-shot as opposed to scalar dataset.
 
-Format: ![pre-processed](https://drive.google.com/file/d/19fZuzNeSklN7GDJFqaLIySasF5R4d22q/view?usp=sharing)
+Format: ![pre-processed](/images/EO_2010.png)
 
-I used the second options found in the function to create a "subplot" to show that data. Using the facet_row method, it creates multiple maps for each variable selected. It looks messy even with only a little over a dozen grouping variables.
+I used the second options found in the [function](https://plotly.com/python-api-reference/generated/plotly.express.choropleth) to create a "subplot" to show that data. Using the facet_row method, it creates multiple maps for each variable selected. It looks messy even with only a little over a dozen grouping variables.
 
-Format ![framed_col](https://drive.google.com/file/d/1enOA_yulf64w1Oz_oL6UTmm3ShZUtM8Z/view?usp=sharing)
+![framed_col](/images/facet_row.png)
 
 The second variation was to use the animation_frame method to showcase the various groups while still only in 1 year. While "unorthodox" in method (pun intended) since this parameter is usually for time, it is a way to see the geographical division by group. 
 
-Format: ![animation_frame](https://drive.google.com/file/d/1ej8ay1q_7BwjL8UK-7ThJXqDKlHysm5q/view?usp=sharing)
+Format: ![animation_frame](/images/animation.png)
 
 This discovery, that a chloropleth map is actually a plot with geo on the vertical axis is one that helps shape the way the data is pre-processed to enter correctly into the mapping function. While other solutions may exist, it seems that this is the easiet route. I have not read of other users finding this to be a problem with there data. In fact, the assumption seems to be that the map processes the merging of FIPS rows in a satisfactorly way. If that's correct, I have to disagree.
 
