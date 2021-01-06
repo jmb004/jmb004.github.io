@@ -8,7 +8,7 @@ My interest was to do some basic visual data analysis of a religion in the state
 
 The data set, Religious Congregations and Membership Study 2000, came from the [Association of Religious Data Archives](https://www.thearda.com). 
 
-## aking the map ##
+## Making the map ##
 A guide for making the map was [used](https://plotly.com/python/choropleth-maps/). The idea was to map the various Orthodox adherents to a chloropath style map.
 Additional guidance was found on [Towards Data Science](https://towardsdatascience.com/choropleth-maps-101-using-plotly-5daf85e7275d).
 
