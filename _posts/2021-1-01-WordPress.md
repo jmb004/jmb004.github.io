@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Exploring religious data to learn about Excel & Python mapping'
+title: 'Exploring religious data to learn mapping with plotly.express'
 published: true
 ---
 
