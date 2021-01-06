@@ -15,7 +15,7 @@ Additional guidance was found on [Towards Data Science](https://towardsdatascien
 I pre-processed the data in Excel. This was to filter down to Michigan data. What we are looking at is 3-dimensional long data that I want to analyze. 3d from the fact that it's a County, crossed by a Group, crossed by a Year.
 
 ## The Problem ##
-The problem arises when multiple data points have the same FIPS. Simply, how does the mapping function work to read in the data accounting for this?
+The problem arises when multiple data points have the same FIPS. ON my first map it was clear that the various data points for one County were not represented but only the first. For example, if Alleghan County has 3 sub-groups of Orthodox relgion and each have a membership count, then only the first sub-group by as read numerically from the .csv would be mapped. Simply, how does the mapping function work to read in the data accounting for this? I could not find a direct answer to this question, so I decided to play around with options to learn how it operates.
 
 ## Possible Solutions ##
 There a few options: reduce the variables in the data set to only 2 (i.e., reduce the variables Year and Group to 1) so that the map is a plot of 2 variables. Or, use another parameter of the function to create a 3rd dimension. This would only look different and maybe be harder to interpret quickly. The question is, what do I want to show?
@@ -32,7 +32,7 @@ Then I remembered another method: use the animation_frame method to showcase the
 
 Format: ![animation_frame](/images/animation.png)
 
-This discovery, that a chloropleth map is actually a plot with geophical data (FIPS here) on the vertical axis is one that helps shape the way the data is fed into the mapping function. While other solutions may exist, it seems that that pre-processing the data to remove or reduce a variable is the easiet route. I have not read of other users finding this to be a problem with there data. In fact, the assumption seems to be that the map processes the merging of FIPS rows with multiple datapoints in a satisfactorly way. If that's a correct assumption I have to disagree.
+This discovery, that a chloropleth map is actually a plot with geophical data (FIPS here) on the vertical axis is one that helps shape the way the data is fed into the mapping function. While other solutions may exist, it seems that that pre-processing the data to remove or reduce a variable is the easiet route. I have not read of other users finding this to be a problem with there data. In fact, the assumption seems to be that the map processes the merging of FIPS rows with multiple datapoints in a satisfactorly way. If that's a correct assumption, I have to disagree.
 
 ## Code below ##
 ------
